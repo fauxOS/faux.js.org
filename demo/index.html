@@ -1,7 +1,29 @@
 <html>
   <head>
     <title>FauxOS Demo</title>
-    <script src="https://rawgit.com/fauxOS/fauxOS/master/fauxOS.js"></script>
+    <!--- Record initiation load time for the script --->
+    <script>console.time("Initiation Time")</script>
+      <script src="https://rawgit.com/fauxOS/fauxOS/master/fauxOS.js"></script>
+    <script>console.timeEnd("Initiation Time")</script>
+    <!--- Print a nice welcome banner --->
+ <script>
+console.log("%cWelcome to Faux OS - Written by Daniel Ethridge | https://git.io/de | Licensed MIT\n"
+
++
+
+"%c               ____                   ____   ____\n              \/ __\/___ _ __ ____ __  \/ __ \\ \/ __\/\n             \/ _\/ \/ _ `\/\/ \/\/ \/\\ \\ \/ \/ \/_\/ \/_\\ \\\n            \/_\/   \\_,_\/ \\_,_\/\/_\\_\\  \\____\/\/___\/\n\n"
+
++
+
+`%cAll your commands should be found in window.prog as functions.
+
+The main computer is found in window.box, experiment from there, or visit the project docs
+
+https://fauxos.github.io/docs
+
+Have fun!`, "color: #657575", "font-size: 1.25em; color: #151515", "color: #657575");
+console.log(box);
+</script>
     <style>
       p {
         font-size: 2.5em;
