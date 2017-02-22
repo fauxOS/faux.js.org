@@ -23,17 +23,40 @@ https://fauxos.github.io/docs
 Have fun!`, "color: #657575", "font-size: 1.25em; color: #151515", "color: #657575");
 console.log(box);
 </script>
-    <style>
-      p {
-        font-size: 2.5em;
-        font-family: Roboto, Lato, sans-serif;
-        text-align: center;
-        margin: 10% auto;
-        color: #3c3c3c;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/css/base.css">
   </head>
   <body>
-    <p>Open up the JavaScript console in your browser to try it out</p>
+    <p>Open up your JavaScript console</p>
+    <hr>
+    <script>
+      function toggleHelp() {
+        const how = document.querySelector("#how");
+        if (how.style.display === "") {
+          how.style.display = "none";
+        }
+        else {
+          how.style.display = "";
+        }
+      }
+    </script>
+    <button onClick="toggleHelp()">How?</button>
+    <div id="how">
+      <p>
+        <i>Chrome -</i>
+        <code> Ctrl + Shift + J</code>
+      </p>
+      <p>
+        <i>Firefox -</i>
+        <code> Ctrl + Shift + K</code>
+      </p>
+      <p>
+        <i>Safari -</i>
+        <code> Cmd + Alt + C</code>
+      </p>
+      <p>
+        <i>MacOS -</i>
+        Replace <code>Ctrl + Shift</code> with <code>Cmd + Alt</code>
+      </p>
+    </div>
   </body>
 </html>
