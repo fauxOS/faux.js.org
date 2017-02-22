@@ -35,3 +35,20 @@ button:hover {
   background-color: #fff;
   transition: 0.5s;
 }
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #dedede
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: #e6e6e6
+}
+
+code {
+  font-family: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", Courier, monospace';
+}
